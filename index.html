@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SendMoney dApp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+  <h1>SendMoney dApp</h1>
+
+  <button id="connectButton">Connect Wallet</button>
+  <p id="walletAddress">Wallet: Not connected</p>
+
+  <div class="info">
+    <p>Contract Balance: <span id="contractBalance">0</span> ETH</p>
+    <p>Your Deposited: <span id="userBalance">0</span> ETH</p>
+  </div>
+
+  <div class="actions">
+    <h3>Deposit ETH</h3>
+    <input type="number" id="depositAmount" placeholder="Amount in ETH">
+    <button id="depositButton">Deposit</button>
+  </div>
+
+  <div class="actions">
+    <h3>Withdraw (Owner Only)</h3>
+    <input type="number" id="withdrawAmount" placeholder="Max 1 ETH">
+    <button id="withdrawButton">Withdraw</button>
+  </div>
+  
+
+  <footer style="margin-top: 4rem; text-align: center; color: #6b7280; font-size: 0.9rem;">
+  Deployed by <strong style="color: #4ade80;">KingTublas</strong>, built onchain.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

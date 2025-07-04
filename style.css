@@ -1,0 +1,84 @@
+/* Base reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0d111c;
+  color: #ffffff;
+  padding: 2rem;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Title */
+h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+button {
+  background-color: #4ade80;
+  color: #000;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #22c55e;
+}
+
+/* Inputs */
+input[type="number"] {
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background: #1c1f2b;
+  color: #fff;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  width: 200px;
+}
+
+/* Wallet + Info */
+#walletAddress {
+  margin: 1rem 0;
+  color: #9ca3af;
+}
+
+/* Card Containers */
+.info, .actions {
+  margin-top: 2rem;
+  background: #1c1f2b;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.info p, .actions h3, .actions p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.actions h3 {
+  color: #93c5fd;
+}
+
+.actions input,
+.actions button {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
