@@ -1,4 +1,4 @@
-/* Base reset */
+/* Base Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,7 +9,7 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #0d111c;
   color: #ffffff;
-  padding: 2rem;
+  padding: 1.5rem;
   min-height: 100vh;
 
   display: flex;
@@ -18,14 +18,36 @@ body {
   justify-content: flex-start;
 }
 
+/* Layout Container */
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 1rem;
+}
+
+@media (max-width: 480px) {
+  button {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+
 /* Title */
 h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
   color: #ffffff;
-  margin-bottom: 1.5rem;
 }
 
 /* Buttons */
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
 button {
   background-color: #4ade80;
   color: #000;
@@ -35,7 +57,10 @@ button {
   border-radius: 12px;
   cursor: pointer;
   transition: background 0.3s ease;
+  width: auto;
+  max-width: 300px;
 }
+
 
 button:hover {
   background-color: #22c55e;
@@ -49,28 +74,35 @@ input[type="number"] {
   background: #1c1f2b;
   color: #fff;
   font-size: 1rem;
-  margin-right: 0.5rem;
-  width: 200px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
 }
 
-/* Wallet + Info */
+/* Wallet Address */
 #walletAddress {
   margin: 1rem 0;
   color: #9ca3af;
+  font-size: 1rem;
+  text-align: center;
 }
 
 /* Card Containers */
 .info, .actions {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   background: #1c1f2b;
   padding: 1.5rem;
   border-radius: 20px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
 }
 
-.info p, .actions h3, .actions p {
+.info p,
+.actions p,
+.actions h3 {
   font-size: 1.1rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .actions h3 {
@@ -79,6 +111,13 @@ input[type="number"] {
 
 .actions input,
 .actions button {
-  display: inline-block;
   margin-top: 0.5rem;
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.9rem;
 }
